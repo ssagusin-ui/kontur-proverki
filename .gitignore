@@ -1,0 +1,14 @@
+.venv/
+runtime/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/credentials.toml
+.streamlit/machine_id_v4
+storage/*
+!storage/README.txt
+
+/Контур проверки.exe
+/Microsoft.Web.WebView2.Core.dll
+/Microsoft.Web.WebView2.WinForms.dll
+/WebView2Loader.dll

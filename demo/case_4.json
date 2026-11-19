@@ -1,0 +1,169 @@
+{
+  "id": "case_4",
+  "year": 2025,
+  "title": "Комплексная многоисточниковая проверка",
+  "description": "Несколько разнородных расхождений, зарубежная недвижимость, контракт, доходы и исполнительное производство.",
+  "declaration": {
+    "declarant": {
+      "id": "P401",
+      "name": "Марина Орлова",
+      "position": "Член демонстрационной закупочной комиссии",
+      "agency_id": "AG401",
+      "procurement_decision_role": true
+    },
+    "family": [
+      {
+        "id": "P402",
+        "name": "Алексей Орлов",
+        "relation": "spouse"
+      }
+    ],
+    "assets": [
+      {
+        "registry_id": "RE401",
+        "person_id": "P401",
+        "name": "Квартира на Центральной улице"
+      }
+    ],
+    "income": [
+      {
+        "id": "DI401",
+        "person_id": "P401",
+        "year": 2025,
+        "amount": 1550000
+      },
+      {
+        "id": "DI402",
+        "person_id": "P402",
+        "year": 2025,
+        "amount": 520000
+      }
+    ],
+    "organizations": [],
+    "obligations": []
+  },
+  "registries": {
+    "property": [
+      {
+        "id": "RE401",
+        "owner_id": "P401",
+        "name": "Квартира на Центральной улице",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2020,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE401",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "RE402",
+        "owner_id": "P402",
+        "name": "Апартаменты на Береговой улице",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2020,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE402",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "RE403",
+        "owner_id": "P402",
+        "name": "Квартира в вымышленном зарубежном регионе",
+        "kind": "real_estate",
+        "country": "XX",
+        "from_year": 2022,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE403",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "income": [
+      {
+        "id": "I401",
+        "person_id": "P401",
+        "amount": 1990000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I401",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "I402",
+        "person_id": "P402",
+        "amount": 520000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I402",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "organizations": [
+      {
+        "id": "ORG401",
+        "name": "ООО «Техноконтур»",
+        "members": [
+          {
+            "person_id": "P402",
+            "role": "участник 50%",
+            "share": 50,
+            "from_year": 2022
+          }
+        ],
+        "source": {
+          "name": "ДЕМО · модель реестра юридических лиц",
+          "record_id": "ORG/ORG401",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "contracts": [
+      {
+        "id": "ГК-2025-401",
+        "contractor_org_id": "ORG401",
+        "customer_agency_id": "AG401",
+        "customer_name": "Демонстрационное ведомство",
+        "subject": "Поставка оборудования",
+        "amount": 27000000,
+        "government": true,
+        "signed_on": "2025-06-18",
+        "source": {
+          "name": "ДЕМО · модель реестра контрактов",
+          "record_id": "CN/ГК-2025-401",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "enforcement": [
+      {
+        "id": "EN401",
+        "person_id": "P401",
+        "amount": 180000,
+        "status": "active",
+        "source": {
+          "name": "ДЕМО · модель исполнительных производств",
+          "record_id": "ENF/EN401",
+          "as_of": "2026-10-30"
+        }
+      }
+    ]
+  },
+  "expected_rules": [
+    "R01_PROPERTY",
+    "R02_INCOME",
+    "R03_BUSINESS",
+    "R04_CONTRACT",
+    "R05_FOREIGN",
+    "R06_ENFORCEMENT"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "case_3",
+  "year": 2025,
+  "title": "Семейная цепочка и госконтракт",
+  "description": "Супруг участвует в юридическом лице — исполнителе контракта. Участие лица в решениях заказчика не заявлено.",
+  "declaration": {
+    "declarant": {
+      "id": "P301",
+      "name": "Артём Крылов",
+      "position": "Советник учреждения",
+      "agency_id": "AG301",
+      "procurement_decision_role": false
+    },
+    "family": [
+      {
+        "id": "P302",
+        "name": "Наталья Крылова",
+        "relation": "spouse"
+      }
+    ],
+    "assets": [
+      {
+        "registry_id": "RE301",
+        "person_id": "P301",
+        "name": "Квартира на Полевой улице"
+      }
+    ],
+    "income": [
+      {
+        "id": "DI301",
+        "person_id": "P301",
+        "year": 2025,
+        "amount": 1240000
+      },
+      {
+        "id": "DI302",
+        "person_id": "P302",
+        "year": 2025,
+        "amount": 40000
+      }
+    ],
+    "organizations": [],
+    "obligations": []
+  },
+  "registries": {
+    "property": [
+      {
+        "id": "RE301",
+        "owner_id": "P301",
+        "name": "Квартира на Полевой улице",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2020,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE301",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "income": [
+      {
+        "id": "I301",
+        "person_id": "P301",
+        "amount": 1240000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I301",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "I302",
+        "person_id": "P302",
+        "amount": 40000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I302",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "organizations": [
+      {
+        "id": "ORG301",
+        "name": "ООО «Вектор-Сервис»",
+        "members": [
+          {
+            "person_id": "P302",
+            "role": "участник, доля 100%",
+            "share": 100,
+            "from_year": 2023
+          }
+        ],
+        "source": {
+          "name": "ДЕМО · модель реестра юридических лиц",
+          "record_id": "ORG/ORG301",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "contracts": [
+      {
+        "id": "ГК-2025-114",
+        "contractor_org_id": "ORG301",
+        "customer_agency_id": "AG999",
+        "customer_name": "Демонстрационное ведомство",
+        "subject": "Ремонт административного здания",
+        "amount": 18500000,
+        "government": true,
+        "signed_on": "2025-06-18",
+        "source": {
+          "name": "ДЕМО · модель реестра контрактов",
+          "record_id": "CN/ГК-2025-114",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "enforcement": []
+  },
+  "expected_rules": [
+    "R03_BUSINESS",
+    "R04_CONTRACT"
+  ]
+}

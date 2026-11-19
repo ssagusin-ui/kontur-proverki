@@ -1,0 +1,89 @@
+{
+  "id": "case_1",
+  "year": 2025,
+  "title": "Чистая декларация",
+  "description": "Сведения о доходах и недвижимости совпадают с модельными источниками. Проверяет отсутствие ложных сигналов.",
+  "declaration": {
+    "declarant": {
+      "id": "P101",
+      "name": "Елена Савельева",
+      "position": "Специалист государственного учреждения",
+      "agency_id": "AG101"
+    },
+    "family": [
+      {
+        "id": "P102",
+        "name": "Игорь Савельев",
+        "relation": "spouse"
+      }
+    ],
+    "assets": [
+      {
+        "registry_id": "RE101",
+        "person_id": "P101",
+        "name": "Квартира на Липовой улице"
+      }
+    ],
+    "income": [
+      {
+        "id": "DI101",
+        "person_id": "P101",
+        "year": 2025,
+        "amount": 1190000
+      },
+      {
+        "id": "DI102",
+        "person_id": "P102",
+        "year": 2025,
+        "amount": 850000
+      }
+    ],
+    "organizations": [],
+    "obligations": []
+  },
+  "registries": {
+    "property": [
+      {
+        "id": "RE101",
+        "owner_id": "P101",
+        "name": "Квартира на Липовой улице",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2020,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE101",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "income": [
+      {
+        "id": "I101",
+        "person_id": "P101",
+        "amount": 1190000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I101",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "I102",
+        "person_id": "P102",
+        "amount": 850000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I102",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "organizations": [],
+    "contracts": [],
+    "enforcement": []
+  },
+  "expected_rules": []
+}

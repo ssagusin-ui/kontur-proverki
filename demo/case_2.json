@@ -1,0 +1,104 @@
+{
+  "id": "case_2",
+  "year": 2025,
+  "title": "Неотражённая недвижимость супруга",
+  "description": "В отдельной записи модели реестра найден объект супруга, который отсутствует в представленных сведениях.",
+  "declaration": {
+    "declarant": {
+      "id": "P201",
+      "name": "Дмитрий Ветров",
+      "position": "Начальник технического отдела",
+      "agency_id": "AG201"
+    },
+    "family": [
+      {
+        "id": "P202",
+        "name": "Ольга Ветрова",
+        "relation": "spouse"
+      }
+    ],
+    "assets": [
+      {
+        "registry_id": "RE201",
+        "person_id": "P201",
+        "name": "Квартира на Вишнёвой улице"
+      }
+    ],
+    "income": [
+      {
+        "id": "DI201",
+        "person_id": "P201",
+        "year": 2025,
+        "amount": 1680000
+      },
+      {
+        "id": "DI202",
+        "person_id": "P202",
+        "year": 2025,
+        "amount": 640000
+      }
+    ],
+    "organizations": [],
+    "obligations": []
+  },
+  "registries": {
+    "property": [
+      {
+        "id": "RE201",
+        "owner_id": "P201",
+        "name": "Квартира на Вишнёвой улице",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2020,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE201",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "RE202",
+        "owner_id": "P202",
+        "name": "Дом в посёлке Тихие Горы",
+        "kind": "real_estate",
+        "country": "RU",
+        "from_year": 2024,
+        "source": {
+          "name": "ДЕМО · модель реестра недвижимости",
+          "record_id": "PROP/RE202",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "income": [
+      {
+        "id": "I201",
+        "person_id": "P201",
+        "amount": 1680000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I201",
+          "as_of": "2026-10-30"
+        }
+      },
+      {
+        "id": "I202",
+        "person_id": "P202",
+        "amount": 640000,
+        "year": 2025,
+        "source": {
+          "name": "ДЕМО · модель сведений о доходах",
+          "record_id": "INC/I202",
+          "as_of": "2026-10-30"
+        }
+      }
+    ],
+    "organizations": [],
+    "contracts": [],
+    "enforcement": []
+  },
+  "expected_rules": [
+    "R01_PROPERTY"
+  ]
+}
