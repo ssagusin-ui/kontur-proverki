@@ -52,4 +52,4 @@ python -m unittest discover -s tests -v
 python scripts/acceptance_check.py
 ```
 
-Результаты приведены в [отчёте о тестировании](TEST_REPORT.md) и [отчёте о проверке окна Windows](desktop/TEST_REPORT.md). Материалы к защите собраны в [сценарии выступления](DEMO_SCRIPT.md).
+Результаты приведены в [отчёте о тестировании](TEST_REPORT.md) и [отчёте о проверке окна Windows](desktop/TEST_REPORT.md).
